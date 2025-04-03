@@ -2,3 +2,7 @@
 Issue:-
 
 “I was unsure which database to use—SQL or NoSQL—because we didn’t have data samples or expected scale defined.”
+
+## Fix: Decided to start with a simple SQLite or PostgreSQL setup for now and switch later if needed.
+
+
