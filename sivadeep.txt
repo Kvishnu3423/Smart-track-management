@@ -1,0 +1,4 @@
+### 3. Data Access Layer Specialist
+Issue:-
+
+“I was unsure which database to use—SQL or NoSQL—because we didn’t have data samples or expected scale defined.”
