@@ -1,0 +1,17 @@
+# Interface Specifications Between Layers
+
+## Presentation Layer ↔ Business Logic Layer
+- **Interface Type**: API or Controller Functions
+- **Data Format**: JSON payloads
+- **Functions**:
+  - submitStudentReport(student_id, report_data)
+  - fetchStudentStatus(student_id)
+  - login(user_type, credentials)
+
+## Business Logic Layer ↔ Data Access Layer
+- **Interface Type**: DAO Classes / ORM / SQL Queries
+- **Data Format**: Raw data objects or serialized entities
+- **Functions**:
+  - getStudentReport(student_id)
+  - updateStudentStatus(student_id, status)
+  - retrieveSchedule(user_id)

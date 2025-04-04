@@ -1,0 +1,21 @@
+# Quality Attribute Analysis
+
+## 1. Performance
+- **Requirement**: The system must load student dashboards within 3 seconds.
+- **Strategy**: Cache frequent queries, asynchronous data loading.
+
+## 2. Scalability
+- **Requirement**: Support 10,000+ concurrent users.
+- **Strategy**: Use microservices architecture, load balancers.
+
+## 3. Security
+- **Requirement**: Prevent unauthorized access to student data.
+- **Strategy**: Role-based access control, HTTPS-only communication, encryption at rest and in transit.
+
+## 4. Availability
+- **Requirement**: 99.9% uptime during school hours.
+- **Strategy**: Deploy redundant servers, failover support.
+
+## 5. Maintainability
+- **Requirement**: Easy to add new roles (e.g., teachers).
+- **Strategy**: Modular components, layered architecture separation.

@@ -1,0 +1,18 @@
+# Component Responsibility Documentation
+
+## 1. Presentation Layer
+Handles all user-facing interactions. Includes:
+- Admin UI: Interface for administrators to manage tracks, view reports, and configure system settings.
+- Parents UI: Allows parents to view student tracking details, attendance, and performance metrics.
+- Student UI: Enables students to view their own progress, schedules, and receive notifications.
+
+## 2. Business Logic Layer
+Processes inputs from the presentation layer and applies core application rules. Responsibilities include:
+- Validating user input
+- Coordinating data between the UI and data storage
+- Applying business rules (e.g., alerts on student behavior, performance tracking logic)
+
+## 3. Data Access Layer (Assumed)
+Even though not explicitly shown, a typical layered architecture would include this layer:
+- Responsible for retrieving and storing data in the backend
+- Acts as a middleware between Business Logic and the database
