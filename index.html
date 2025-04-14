@@ -2,19 +2,103 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Smart-Track-Managment</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Smart Track Management</title>
+
+  <!-- External CSS and JS -->
   <link rel="stylesheet" href="style.css" />
-  <script src="app.js"></script>
+  <script src="app.js" defer></script>
+
+  <!-- Internal Styling for Quick Setup -->
+  <style>
+    /* Reset default margin and padding */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    /* Body styling */
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #f0f4f8;
+      color: #333;
+      margin: 0;
+      padding: 40px 20px;
+    }
+
+    /* Main content area */
+    main {
+      max-width: 900px;
+      margin: auto;
+      background-color: #fff;
+      padding: 40px;
+      border-radius: 12px;
+      box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+    }
+
+    /* Header section */
+    header h2 {
+      color: #1a53ff; /* Professional blue */
+      font-size: 2em;
+      margin-bottom: 20px;
+      font-weight: 600;
+    }
+
+    /* Navigation styling */
+    nav {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+    }
+
+    /* Link styling */
+    a {
+      text-decoration: none;
+      color: #2a75d7; /* Soft blue color for links */
+      font-size: 1.1em;
+      padding: 10px 15px;
+      background-color: #e1efff; /* Light blue background */
+      border-radius: 6px;
+      transition: all 0.3s ease;
+      display: inline-block;
+    }
+
+    /* Link hover effect */
+    a:hover {
+      color: #fff;
+      background-color: #0d47a1; /* Darker blue on hover */
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    /* Footer for extra information */
+    footer {
+      margin-top: 40px;
+      text-align: center;
+      font-size: 0.9em;
+      color: #888;
+    }
+  </style>
 </head>
+
 <body>
-    <h2>Website for Software Engineering</h2>
-    <p> </p>
-    <a href="./teamMembers/kumar.html">Kumar's Page</a>
-    <a href="./teamMembers/bharath.html">bharath's Page</a>
-    <a href="./teamMembers/sivadeep.html">sivadeep's Page</a>
-    <a href="./teamMembers/gouse.html">gouse's Page</a>
-    <a href="./teamMembers/bhanu.html">bhanu's Page</a>
-    <a href="./teamMembers/sasikiran.html">sasikiran's Page</a>
+  <main>
+    <header>
+      <h2>Smart Track Management</h2>
+    </header>
+
+    <nav aria-label="Team Members Pages">
+      <a href="./teamMembers/kumar.html">Kumar's Page</a>
+      <a href="./teamMembers/bharath.html">Bharath's Page</a>
+      <a href="./teamMembers/sivadeep.html">Sivadeep's Page</a>
+      <a href="./teamMembers/gouse.html">Gouse's Page</a>
+      <a href="./teamMembers/bhanu.html">Bhanu's Page</a>
+      <a href="./teamMembers/sasikiran.html">Sasikiran's Page</a>
+    </nav>
+
+    <footer>
+      &copy; 2025 Smart Track Management. All rights reserved.
+    </footer>
+  </main>
 </body>
 </html>
