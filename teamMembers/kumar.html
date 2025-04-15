@@ -4,71 +4,81 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Kumar's Page</title>
+  
   <style>
-    /* Base styles */
     * {
       margin: 0;
       padding: 0;
       box-sizing: border-box;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     }
 
     body {
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      background-color: #f0f4f8;
+      background: #f4f7fa;
       color: #333;
-      padding: 40px 20px;
       line-height: 1.6;
+      padding: 20px;
     }
 
     main {
-      max-width: 900px;
-      margin: auto;
-      background-color: #fff;
-      padding: 40px;
+      max-width: 800px;
+      margin: 0 auto;
+      background: #fff;
+      padding: 30px;
       border-radius: 12px;
-      box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+      box-shadow: 0 8px 16px rgba(0,0,0,0.1);
     }
 
-    header h1 {
-      font-size: 2em;
-      color: #2a75d7;
-      margin-bottom: 10px;
-    }
-
-    header p {
-      font-size: 1.1em;
-      color: #666;
+    header {
+      text-align: center;
       margin-bottom: 30px;
     }
 
-    section h2 {
-      font-size: 1.5em;
-      color: #1e40af;
-      margin-bottom: 15px;
-    }
-
-    ul {
-      list-style-type: disc;
-      padding-left: 25px;
-    }
-
-    li {
-      font-size: 1.05em;
+    h1 {
+      font-size: 2.5em;
+      color: #2c3e50;
       margin-bottom: 10px;
     }
 
-    li strong {
-      color: #1a53ff;
+    p {
+      font-size: 1.1em;
+      color: #555;
+    }
+
+    section ul {
+      list-style-type: none;
+      padding-left: 0;
+    }
+
+    section li {
+      background: #eaf1f8;
+      padding: 20px;
+      border-radius: 10px;
+      margin-bottom: 20px;
+      transition: transform 0.2s ease-in-out;
+    }
+
+    section li:hover {
+      transform: translateY(-5px);
+    }
+
+    h2 {
+      color: #1a73e8;
+      margin-bottom: 10px;
+    }
+
+    strong {
+      color: #0b3d91;
     }
 
     footer {
       text-align: center;
-      margin-top: 40px;
       font-size: 0.9em;
-      color: #aaa;
+      margin-top: 40px;
+      color: #888;
     }
   </style>
-  
+
   <script src="app.js"></script>
 </head>
 <body>
