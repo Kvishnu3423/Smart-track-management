@@ -4,89 +4,107 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>welcome to my page!</title>
+  <title>Welcome to My Page!</title>
   <style>
     body {
-      font-family: Arial, sans-serif;
-      background-color: #f2f2f2;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #f9fafb;
       margin: 0;
       padding: 0;
+      color: #333;
     }
 
     header {
-      background-color: #2c3e50;
-      color: white;
+      background-color: #34495e;
+      color: #ecf0f1;
       text-align: center;
-      padding: 2rem;
+      padding: 2.5rem 1rem;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
     }
 
-    h1 {
-      margin-bottom: 0.5rem;
+    header h1 {
+      margin: 0;
+      font-size: 2.5rem;
     }
 
     .content {
-      max-width: 800px;
-      margin: 2rem auto;
-      padding: 1rem;
+      max-width: 900px;
+      margin: 2.5rem auto;
+      padding: 2rem;
       background-color: #ffffff;
-      border-radius: 8px;
+      border-radius: 10px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    }
+
+    h2 {
+      margin-top: 0;
+      font-size: 1.6rem;
     }
 
     .section {
-      margin-bottom: 2rem;
+      margin-bottom: 2.5rem;
+      line-height: 1.6;
     }
 
     .fleet h2 {
-      color: #1f618d;
-      /* Blue */
+      color: #2980b9;
     }
 
     .student h2 {
-      color: #c0392b;
-      /* Red */
+      color: #e74c3c;
     }
 
     .hospital h2 {
-      color: #148f77;
-      /* Teal/Green */
+      color: #16a085;
     }
 
     strong {
-      color: #333333;
+      color: #2c3e50;
     }
 
     .MainPage-button {
-      margin: 30px 0;
-      background-color: #2cbaee; /* Purple */
+      display: inline-block;
+      margin: 2rem auto;
+      background-color: #2cbaee;
       color: white;
-      padding: 12px 24px;
+      padding: 14px 28px;
       border: none;
-      border-radius: 8px;
+      border-radius: 10px;
       font-size: 16px;
       cursor: pointer;
-      transition: background-color 0.3s ease;
+      text-align: center;
       text-decoration: none;
+      transition: background-color 0.3s ease, transform 0.2s ease;
     }
-    
+
+    .MainPage-button:hover {
+      background-color: #1aa3d9;
+      transform: scale(1.05);
+    }
+
+    p {
+      margin: 0.5rem 0 1rem;
+    }
   </style>
 </head>
 
 <body>
 
   <header>
-    <h1>Welcome to my page!</h1>
+    <h1>Welcome to My Page!</h1>
   </header>
 
   <div class="content">
-    <h1>professor feedback: What is this?</h1>
-    <p> You need reflections on the 3 things we discussed in class. Please see my example repo if you are still
+    <h1>Professor Feedback: What is This?</h1>
+    <p>You need reflections on the 3 things we discussed in class. Please see my example repo if you are still
       confused.</p>
+
     <div class="section fleet">
       <h2>1. Clean, Readable Structure with Thematic Styling</h2>
-      <p><strong>Use Case:</strong> This structure is useful when building webpages that are easy to navigate and visually organized. Thematic styling (like color-coded sections) helps users identify content at a glance.
-      </p>
+      <p><strong>Use Case:</strong> This structure is useful when building webpages that are easy to navigate and visually organized. Thematic styling (like color-coded sections) helps users identify content at a glance.</p>
       <p><strong>Benefit:</strong> It improves both the user experience and code maintainability. Developers can quickly recognize the purpose of each section, and users can find information faster.</p>
-      <h2>Professor Reed's Comment<br></h2>What did you learn?
+      <h2>Professor Reed's Comment</h2>
+      <p>What did you learn?</p>
     </div>
 
     <div class="section student">
@@ -100,12 +118,14 @@
       <p><strong>Use Case:</strong> Thinking about scalability is important for future-proofing a project. If the site or app needs to grow, the code should already be modular and easy to expand.</p>
       <p><strong>Benefit:</strong> It saves time and effort in the long term. Planning ahead allows for new features or sections to be added without having to rewrite large parts of the code.</p>
     </div>
-
   </div>
 
-    <!-- Return to Main Page -->
+  <!-- Return to Main Page -->
+  <div style="text-align: center;">
     <a href="../index.html" class="MainPage-button">⬅ Return to Main Page</a>
+  </div>
 
 </body>
 
 </html>
+
