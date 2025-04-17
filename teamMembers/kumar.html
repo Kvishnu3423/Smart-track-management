@@ -14,52 +14,59 @@
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
       transition: background-color 0.3s ease, color 0.3s ease;
     }
-
+  
     body {
-      background: #f4f7fa;
+      background: #e1ecf4; /* ADDED light background */
       color: #333;
       line-height: 1.6;
       padding: 20px;
     }
-
+  
     body.dark-mode {
-      background: #121212;
+      background: #0d1117; /* ADDED dark background */
       color: #f1f1f1;
     }
-
+  
     .container {
       max-width: 900px;
       margin: 0 auto;
-      background: #fff;
+      background: #ffffff;
       padding: 40px;
       border-radius: 12px;
       box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
     }
-
+  
     body.dark-mode .container {
       background: #1e1e1e;
       box-shadow: 0 8px 16px rgba(255, 255, 255, 0.05);
     }
-
+  
     h1 {
       font-size: 2.5em;
       color: #2c3e50;
       text-align: center;
       margin-bottom: 30px;
     }
-
+  
     body.dark-mode h1 {
       color: #dbeafe;
     }
-
+  
     .Reflection-stage {
       display: flex;
       justify-content: space-around;
       margin-bottom: 30px;
       flex-wrap: wrap;
       gap: 10px;
+      background: #f0f4f9; /* ADDED subtle bg */
+      padding: 20px;
+      border-radius: 10px;
     }
-
+  
+    body.dark-mode .Reflection-stage {
+      background: #22262c; /* dark version */
+    }
+  
     .Reflection-stage button {
       background-color: #1a73e8;
       color: white;
@@ -69,11 +76,11 @@
       font-size: 1em;
       cursor: pointer;
     }
-
+  
     .Reflection-stage button:hover {
       background-color: #0b5cd7;
     }
-
+  
     .reflection {
       display: none;
       background: #eaf1f8;
@@ -81,26 +88,26 @@
       border-radius: 10px;
       margin-bottom: 20px;
     }
-
+  
     body.dark-mode .reflection {
       background: #2a2a2a;
     }
-
+  
     .reflection h2 {
       font-size: 1.2em;
     }
-
+  
     footer {
       text-align: center;
       font-size: 0.9em;
       margin-top: 40px;
       color: #888;
     }
-
+  
     body.dark-mode footer {
       color: #aaa;
     }
-
+  
     .MainPage-button {
       display: inline-block;
       background-color: #2cbaee;
@@ -113,11 +120,11 @@
       text-decoration: none;
       margin-bottom: 20px;
     }
-
+  
     .MainPage-button:hover {
       background-color: #199cc9;
     }
-
+  
     .toggle-dark-mode {
       float: right;
       background-color: #555;
@@ -129,24 +136,30 @@
       cursor: pointer;
       margin-bottom: 20px;
     }
-
+  
     body.dark-mode .toggle-dark-mode {
       background-color: #ccc;
       color: #000;
     }
+  
+    @keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
 
-    @keyframes fadeIn {
-      from {
-        opacity: 0;
-        transform: translateY(10px);
-      }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
 
-      to {
-        opacity: 1;
-        transform: translateY(0);
-      }
-    }
+.fade-in {
+  animation: fadeInUp 0.4s ease forwards;
+}
+
   </style>
+  
 
   <script>
     function showReflection(num) {
