@@ -2,129 +2,137 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Bharath's School Bus Tracking App</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Bharath's Page</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
 
-  <!-- Styles -->
-  <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f5f7fa;
+            color: #333;
+        }
 
-    body {
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      background-color: #f0f4f8;
-      color: #333;
-      padding: 40px 20px;
-      line-height: 1.6;
-    }
+        header {
+            background-color: #1f2937;
+            color: white;
+            padding: 30px 20px;
+            text-align: center;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+        }
 
-    main {
-      max-width: 900px;
-      margin: auto;
-      background-color: #fff;
-      padding: 40px;
-      border-radius: 12px;
-      box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
-    }
+        h1 {
+            font-size: 2.5rem;
+            font-weight: bold;
+            letter-spacing: 0.5px;
+        }
 
-    header h1 {
-      font-size: 2em;
-      color: #2a75d7;
-      margin-bottom: 10px;
-    }
+        .container {
+            max-width: 1000px;
+            margin: 40px auto;
+            padding: 0 20px;
+        }
 
-    header p {
-      font-size: 1.1em;
-      color: #666;
-      margin-bottom: 30px;
-    }
+        .section-title {
+            font-size: 1.8rem;
+            color: #1f2937;
+            margin-bottom: 20px;
+            border-left: 4px solid #3b82f6;
+            padding-left: 10px;
+        }
 
-    section h2 {
-      font-size: 1.5em;
-      color: #1e40af;
-      margin-bottom: 15px;
-    }
+        .card {
+            background-color: white;
+            padding: 25px;
+            margin-bottom: 20px;
+            border-radius: 12px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+            transition: transform 0.2s ease;
+        }
 
-    ul {
-      list-style-type: disc;
-      padding-left: 25px;
-    }
+        .card:hover {
+            transform: translateY(-4px);
+        }
 
-    li {
-      font-size: 1.05em;
-      margin-bottom: 10px;
-    }
+        .card h2 {
+            color: #3b82f6;
+            font-size: 1.5rem;
+            margin-bottom: 10px;
+        }
 
-    li strong {
-      color: #1a53ff;
-    }
+        .card p {
+            font-size: 1rem;
+            color: #555;
+            line-height: 1.6;
+        }
 
-    footer {
-      text-align: center;
-      margin-top: 40px;
-      font-size: 0.9em;
-      color: #aaa;
-    }
+        .back-button {
+            display: inline-block;
+            margin: 30px auto;
+            padding: 12px 30px;
+            background-color: #3b82f6;
+            color: white;
+            font-weight: 600;
+            text-decoration: none;
+            border-radius: 8px;
+            transition: background-color 0.3s ease;
+        }
 
-    .MainPage-button {
-      margin: 30px 0;
-      background-color: #2cbaee;
-      color: white;
-      padding: 12px 24px;
-      border: none;
-      border-radius: 8px;
-      font-size: 16px;
-      cursor: pointer;
-      transition: background-color 0.3s ease;
-      text-decoration: none;
-    }
-  </style>
+        .back-button:hover {
+            background-color: #2563eb;
+        }
 
-  <script src="app.js" defer></script>
+        footer {
+            text-align: center;
+            padding: 20px;
+            font-size: 0.9rem;
+            color: #888;
+        }
+    </style>
 </head>
 
 <body>
-  <main>
+
     <header>
-      <h1>School Bus Tracking App</h1>
-      <p>A modern solution for real-time school bus monitoring and management.</p>
+        <h1>Bharath's Dashboard</h1>
     </header>
 
-    <section>
-      <h2>Building the Repository</h2>
-      <p>This platform is designed to support multiple user roles with unique functionalities:</p>
-      <ul>
-        <li><strong>Concerned Parent</strong> tracking a school bus in real-time.</li>
-        <li><strong>Fleet Manager</strong> monitoring and coordinating multiple buses efficiently.</li>
-        <li><strong>Driver</strong> using the app for navigation, check-ins, and communication.</li>
-      </ul>
-    </section>
+    <div class="container">
+        <div class="section-title">📘 School Bus Tracking App Reflections</div>
 
-    <section>
-      <h2>Professor Reed's Comment: What did you learn?</h2>
-      <p>
-        Through this project, I learned how to organize and structure a GitHub repository professionally, collaborate effectively in a team setting, and document 
-        code in a clean and readable format. I also improved my understanding of how to manage multiple user roles in an app and implement functionalities specific to each.
-      </p>
-    </section>
+        <div class="card">
+            <h2>UI for Different Users & Devices</h2>
+            <p>
+                There are parents, drivers, and admins using web, mobile, and admin tools—so the UI needs to be flexible. The specialist has to design clean, role-specific interfaces that feel right on any screen.
+            </p>
+        </div>
 
-    <section>
-      <h2>What I Have Learned</h2>
-      <p>
-        I gained hands-on experience with front-end design and layout using HTML and CSS, including creating responsive components with clean UI. I also explored integrating real-time tracking logic and APIs, understanding how data flows between user roles. Most importantly, I developed a better grasp of software development lifecycle tasks like planning, implementation, testing, and collaboration through Git version control.
-      </p>
-    </section>
+        <div class="card">
+            <h2>Live Updates Matter</h2>
+            <p>
+                Since buses and routes are tracked in real-time, the interface should reflect that—like showing live locations on a map. The UI needs to be dynamic and responsive to backend updates.
+            </p>
+        </div>
 
-    <a href="../index.html" class="MainPage-button">⬅ Return to Main Page</a>
+        <div class="card">
+            <h2>Role-Based Views</h2>
+            <p>
+                Not everyone sees the same stuff. Parents, admins, and drivers all have different roles. The presentation layer must adapt based on who's logged in, showing just what they need.
+            </p>
+        </div>
+
+        <a href="../index.html" class="back-button">⬅ Return to Main Page</a>
+    </div>
 
     <footer>
-      &copy; 2025 Bharath. All rights reserved.
+        &copy; 2025 Bharath's Project. All rights reserved.
     </footer>
-  </main>
+
 </body>
 
 </html>
