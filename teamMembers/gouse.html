@@ -4,70 +4,92 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Smart Track Management System</title>
+  <title>Smart Track Management System - Reflections</title>
   <style>
     body {
       font-family: Arial, sans-serif;
-      background-color: #f2f2f2;
+      background-color: #f0f8ff;
       margin: 0;
       padding: 0;
+      color: #333;
     }
 
     header {
       background-color: #2c3e50;
       color: white;
       text-align: center;
-      padding: 2rem;
+      padding: 2rem 1rem;
     }
 
-    h1 {
-      margin-bottom: 0.5rem;
+    header h1 {
+      margin: 0;
+      font-size: 2.5rem;
     }
 
     .content {
-      max-width: 800px;
+      max-width: 1000px;
       margin: 2rem auto;
-      padding: 1rem;
+      padding: 2rem;
       background-color: #ffffff;
-      border-radius: 8px;
+      border-radius: 10px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
     }
 
     .section {
-      margin-bottom: 2rem;
+      margin-bottom: 2.5rem;
+      padding: 1.5rem;
+      border-radius: 10px;
+      border-left: 6px solid;
     }
 
-    .fleet h2 {
-      color: #1f618d;
-      /* Blue */
+    .fleet {
+      border-color: #3498db;
+      background-color: #eaf6fd;
     }
 
-    .student h2 {
-      color: #c0392b;
-      /* Red */
+    .student {
+      border-color: #e74c3c;
+      background-color: #fdecea;
     }
 
-    .hospital h2 {
-      color: #148f77;
-      /* Teal/Green */
+    .hospital {
+      border-color: #1abc9c;
+      background-color: #e6f7f4;
+    }
+
+    h2 {
+      margin-top: 0;
+      font-size: 1.6rem;
+    }
+
+    p {
+      line-height: 1.6;
+      margin: 0.5rem 0;
     }
 
     strong {
-      color: #333333;
+      color: #000;
     }
 
     .MainPage-button {
-      margin: 30px 0;
-      background-color: #2cbaee; /* Purple */
+      display: block;
+      width: fit-content;
+      margin: 3rem auto;
+      background-color: #5a4fcf;
       color: white;
-      padding: 12px 24px;
-      border: none;
-      border-radius: 8px;
+      padding: 14px 30px;
       font-size: 16px;
+      border: none;
+      border-radius: 10px;
+      text-align: center;
       cursor: pointer;
-      transition: background-color 0.3s ease;
       text-decoration: none;
+      transition: background-color 0.3s ease;
     }
-    
+
+    .MainPage-button:hover {
+      background-color: #423aaf;
+    }
   </style>
 </head>
 
@@ -78,38 +100,31 @@
   </header>
 
   <div class="content">
-    <h1>professor feedback: What is this?</h1>
-    <p> You need reflections on the 3 things we discussed in class. Please see my example repo if you are still
-      confused.</p>
+
     <div class="section fleet">
-      <h2>1. Fleet Management for Logistics Companies</h2>
-      <p><strong>Use Case:</strong> Track trucks or delivery vans in real time, monitor routes, fuel usage, and delays.
-      </p>
-      <p><strong>Benefit:</strong> Enables dispatchers to optimize delivery routes, notify customers of ETAs, and handle
-        delays proactively.</p>
-      <h2>Professor Reed's Comment<br></h2>What did you learn?
+      <h2>🔁 Reflection 1: Modular Package Design</h2>
+      <p><strong>Use Case:</strong> The system is divided into modular components like User Management, Tracking, and Notifications. This design supports scalability and allows independent development and maintenance of each module.</p>
+      <p><strong>Benefit:</strong> Helps manage functionalities efficiently, improves collaboration, and enhances the adaptability of the system over time.</p>
     </div>
 
     <div class="section student">
-      <h2>2. Student Attendance and Campus Movement Tracking</h2>
-      <p><strong>Use Case:</strong> Universities can track student check-ins across different locations (classrooms,
-        library, labs).</p>
-      <p><strong>Benefit:</strong> Ensures safety, automates attendance, and helps in managing facility usage.</p>
+      <h2>🧩 Reflection 2: Real-World Mapping</h2>
+      <p><strong>Use Case:</strong> The object diagram models real-life entities like Student, Bus, Route, and Parent with meaningful relationships, reflecting actual system behavior and usage.</p>
+      <p><strong>Benefit:</strong> Makes the system intuitive for users, simplifies communication among stakeholders, and supports accurate data mapping and retrieval.</p>
     </div>
 
     <div class="section hospital">
-      <h2>3. Hospital Asset and Staff Tracking System</h2>
-      <p><strong>Use Case:</strong> Track location of critical equipment (like ventilators, wheelchairs) and medical
-        staff across departments.</p>
-      <p><strong>Benefit:</strong> Reduces time lost in searching for equipment, improves emergency response, and
-        enhances operational efficiency.</p>
+      <h2>🕸️ Reflection 3: Defined Component Interaction</h2>
+      <p><strong>Use Case:</strong> Relations between modules like Admin, Route, and Notification represent structured communication paths. This ensures the system handles tasks and responses in a connected and predictable manner.</p>
+      <p><strong>Benefit:</strong> Enables real-time tracking, automated alerts, and better system monitoring, resulting in a more reliable and efficient user experience.</p>
     </div>
 
   </div>
 
-    <!-- Return to Main Page -->
-    <a href="../index.html" class="MainPage-button">⬅ Return to Main Page</a>
+  <a href="../index.html" class="MainPage-button">⬅ Return to Main Page</a>
 
 </body>
 
 </html>
+
+
