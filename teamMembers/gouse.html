@@ -8,9 +8,10 @@
   <style>
     body {
       font-family: Arial, sans-serif;
-      background-color: #f2f2f2;
+      background-color: #f2f9ff;
       margin: 0;
       padding: 0;
+      color: #333;
     }
 
     header {
@@ -25,49 +26,73 @@
     }
 
     .content {
-      max-width: 800px;
+      max-width: 900px;
       margin: 2rem auto;
-      padding: 1rem;
+      padding: 2rem;
       background-color: #ffffff;
-      border-radius: 8px;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     }
 
     .section {
       margin-bottom: 2rem;
+      padding: 1rem 1.5rem;
+      border-left: 5px solid;
+      border-radius: 6px;
+      background-color: #fdfdfd;
     }
 
-    .fleet h2 {
-      color: #1f618d;
-      /* Blue */
+    .fleet {
+      border-color: #3498db;
+      background-color: #ecf6fc;
     }
 
-    .student h2 {
-      color: #c0392b;
-      /* Red */
+    .student {
+      border-color: #e74c3c;
+      background-color: #fdecea;
     }
 
-    .hospital h2 {
-      color: #148f77;
-      /* Teal/Green */
+    .hospital {
+      border-color: #16a085;
+      background-color: #e6f4f1;
+    }
+
+    h2 {
+      margin-top: 0;
     }
 
     strong {
-      color: #333333;
+      color: #000;
+    }
+
+    .professor-comment {
+      background-color: #fff3cd;
+      color: #856404;
+      padding: 0.5rem;
+      border-left: 5px solid #ffc107;
+      margin-top: 1rem;
+      font-style: italic;
+      border-radius: 5px;
     }
 
     .MainPage-button {
-      margin: 30px 0;
-      background-color: #2cbaee; /* Purple */
+      display: inline-block;
+      margin: 30px auto;
+      background-color: #5a4fcf;
       color: white;
-      padding: 12px 24px;
+      padding: 14px 28px;
       border: none;
-      border-radius: 8px;
+      border-radius: 10px;
       font-size: 16px;
       cursor: pointer;
-      transition: background-color 0.3s ease;
       text-decoration: none;
+      text-align: center;
+      transition: background-color 0.3s ease;
     }
-    
+
+    .MainPage-button:hover {
+      background-color: #3d36a0;
+    }
   </style>
 </head>
 
@@ -78,37 +103,30 @@
   </header>
 
   <div class="content">
-    <h1>professor feedback: What is this?</h1>
-    <p> You need reflections on the 3 things we discussed in class. Please see my example repo if you are still
-      confused.</p>
+    <h1>Professor Feedback: What is this?</h1>
+    <p>You need reflections on the 3 things we discussed in class. Please see my example repo if you are still confused.</p>
+
     <div class="section fleet">
-      <h2>1. Fleet Management for Logistics Companies</h2>
-      <p><strong>Use Case:</strong> Track trucks or delivery vans in real time, monitor routes, fuel usage, and delays.
-      </p>
-      <p><strong>Benefit:</strong> Enables dispatchers to optimize delivery routes, notify customers of ETAs, and handle
-        delays proactively.</p>
-      <h2>Professor Reed's Comment<br></h2>What did you learn?
+      <h2>🔁 Reflection 1: Modular Package Design</h2>
+      <p><strong>Use Case:</strong> The diagram smartly separates components into packages like User Management and Tracking, supporting scalability and independent development. It shows strong cohesion and reduced inter-module coupling, aligning with good architecture practices.</p>
+      <p><strong>Benefit:</strong> Enables dispatchers to optimize delivery routes, notify customers of ETAs, and handle delays proactively.</p>
+      <div class="professor-comment">What did you learn?</div>
     </div>
 
     <div class="section student">
-      <h2>2. Student Attendance and Campus Movement Tracking</h2>
-      <p><strong>Use Case:</strong> Universities can track student check-ins across different locations (classrooms,
-        library, labs).</p>
-      <p><strong>Benefit:</strong> Ensures safety, automates attendance, and helps in managing facility usage.</p>
+      <h2>🧩 Reflection 2: Real-World Mapping</h2>
+      <p><strong>Use Case:</strong> The object diagram clearly represents real-life entities like Student 1, Bus1, Route 1, and Parent 1 with logical relationships, making the system intuitive and easy to understand.</p>
+      <p><strong>Benefit:</strong> Universities can track student check-ins across different locations (classrooms, library, labs), ensuring safety and managing attendance efficiently.</p>
     </div>
 
     <div class="section hospital">
-      <h2>3. Hospital Asset and Staff Tracking System</h2>
-      <p><strong>Use Case:</strong> Track location of critical equipment (like ventilators, wheelchairs) and medical
-        staff across departments.</p>
-      <p><strong>Benefit:</strong> Reduces time lost in searching for equipment, improves emergency response, and
-        enhances operational efficiency.</p>
+      <h2>🕸️ Reflection 3: Defined Component Interaction</h2>
+      <p><strong>Use Case:</strong> The use of relation elements shows clear communication flows between modules like Admin, Route, and Notification, ensuring functional completeness and supporting a robust, interactive tracking system.</p>
+      <p><strong>Benefit:</strong> Reduces time lost in searching for equipment, improves emergency response, and enhances operational efficiency.</p>
     </div>
-
   </div>
 
-    <!-- Return to Main Page -->
-    <a href="../index.html" class="MainPage-button">⬅ Return to Main Page</a>
+  <a href="../index.html" class="MainPage-button">⬅ Return to Main Page</a>
 
 </body>
 
