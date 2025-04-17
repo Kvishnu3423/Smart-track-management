@@ -12,6 +12,7 @@
       padding: 0;
       box-sizing: border-box;
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      transition: background-color 0.3s ease, color 0.3s ease;
     }
 
     body {
@@ -21,55 +22,72 @@
       padding: 20px;
     }
 
-    main {
-      max-width: 800px;
+    body.dark-mode {
+      background: #121212;
+      color: #f1f1f1;
+    }
+
+    .container {
+      max-width: 900px;
       margin: 0 auto;
       background: #fff;
-      padding: 30px;
+      padding: 40px;
       border-radius: 12px;
       box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
     }
 
-    header {
-      text-align: center;
-      margin-bottom: 30px;
+    body.dark-mode .container {
+      background: #1e1e1e;
+      box-shadow: 0 8px 16px rgba(255, 255, 255, 0.05);
     }
 
     h1 {
       font-size: 2.5em;
       color: #2c3e50;
-      margin-bottom: 10px;
+      text-align: center;
+      margin-bottom: 30px;
     }
 
-    p {
-      font-size: 1.1em;
-      color: #555;
+    body.dark-mode h1 {
+      color: #dbeafe;
     }
 
-    section ul {
-      list-style-type: none;
-      padding-left: 0;
+    .Reflection-stage {
+      display: flex;
+      justify-content: space-around;
+      margin-bottom: 30px;
+      flex-wrap: wrap;
+      gap: 10px;
     }
 
-    section li {
+    .Reflection-stage button {
+      background-color: #1a73e8;
+      color: white;
+      border: none;
+      padding: 12px 20px;
+      border-radius: 8px;
+      font-size: 1em;
+      cursor: pointer;
+    }
+
+    .Reflection-stage button:hover {
+      background-color: #0b5cd7;
+    }
+
+    .reflection {
+      display: none;
       background: #eaf1f8;
-      padding: 20px;
+      padding: 25px;
       border-radius: 10px;
       margin-bottom: 20px;
-      transition: transform 0.2s ease-in-out;
     }
 
-    section li:hover {
-      transform: translateY(-5px);
+    body.dark-mode .reflection {
+      background: #2a2a2a;
     }
 
-    h2 {
-      color: #1a73e8;
-      margin-bottom: 10px;
-    }
-
-    strong {
-      color: #0b3d91;
+    .reflection h2 {
+      font-size: 1.2em;
     }
 
     footer {
@@ -79,48 +97,111 @@
       color: #888;
     }
 
+    body.dark-mode footer {
+      color: #aaa;
+    }
+
     .MainPage-button {
-      margin: 30px 0;
-      background-color: #2cbaee; /* Purple */
+      display: inline-block;
+      background-color: #2cbaee;
       color: white;
       padding: 12px 24px;
       border: none;
       border-radius: 8px;
       font-size: 16px;
       cursor: pointer;
-      transition: background-color 0.3s ease;
       text-decoration: none;
+      margin-bottom: 20px;
+    }
+
+    .MainPage-button:hover {
+      background-color: #199cc9;
+    }
+
+    .toggle-dark-mode {
+      float: right;
+      background-color: #555;
+      color: #fff;
+      padding: 10px 20px;
+      font-size: 0.9em;
+      border-radius: 6px;
+      border: none;
+      cursor: pointer;
+      margin-bottom: 20px;
+    }
+
+    body.dark-mode .toggle-dark-mode {
+      background-color: #ccc;
+      color: #000;
+    }
+
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+        transform: translateY(10px);
+      }
+
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
     }
   </style>
 
-  <script src="app.js"></script>
+  <script>
+    function showReflection(num) {
+      const reflections = document.querySelectorAll('.reflection');
+      reflections.forEach(div => div.style.display = 'none');
+
+      let id;
+      if (num === 1) id = "Clear Layer Separation & Scalability";
+      else if (num === 2) id = "Room for Improved Class Responsibility";
+      else if (num === 3) id = "Relationship Direction & Data Flow Clarity";
+
+      document.getElementById(id).style.display = 'block';
+    }
+
+    function toggleDarkMode() {
+      document.body.classList.toggle("dark-mode");
+    }
+  </script>
 </head>
 
 <body>
-  <main>
-    <header>
-      <h1>My Repo Page</h1>
-      <p>Here you can see what I have learned</p>
-      <h2>Professor Reed's Comment<br></h2> I do not see what you have learned because you didn't write anything. What
-      did you learn?
-    </header>
-
-    <section>
-      <ul>
-        <li>
-          <h2>The Framework I Learned</h2>
-          <p>I learned how to build a website using <strong>Vite + React</strong>, and I'm loving it!</p>
-        </li>
-      </ul>
-    </section>
-
-    <!-- Return to Main Page -->
   <a href="../index.html" class="MainPage-button">⬅ Return to Main Page</a>
+  <button class="toggle-dark-mode" onclick="toggleDarkMode()">🌓 Toggle Dark Mode</button>
 
-    <footer>
-      &copy; 2025 Kumar. All rights reserved.
-    </footer>
-  </main>
+  <div class="container">
+    <h1>Welcome to Kumar's Reflections</h1>
+
+    <div class="Reflection-stage">
+      <button onclick="showReflection(1)">Clear Layer Separation & Scalability</button>
+      <button onclick="showReflection(2)">Class Responsibility</button>
+      <button onclick="showReflection(3)">Data Flow & Direction</button>
+    </div>
+
+    <div id="Clear Layer Separation & Scalability" class="reflection">
+      <h2>
+        I used the <strong>trackable interface</strong> to support a layered architecture where business logic is centralized and reusable. This makes it easier to scale the app when introducing other entities like sensors, students, or driver profiles.
+      </h2>
+    </div>
+
+    <div id="Room for Improved Class Responsibility" class="reflection">
+      <h2>
+        As a <strong>BLL specialist</strong>, I’d advocate enriching these classes with behaviors like <code>assignRoute()</code>, <code>updateLocation()</code>, or <code>calculateETA()</code> to embed true business intelligence in the system.
+      </h2>
+    </div>
+
+    <div id="Relationship Direction & Data Flow Clarity" class="reflection">
+      <h2>
+        Bidirectional associations and inheritance are useful, but their intent must be clear. We need defined <strong>ownership and flow of data</strong> to prevent coupling or ambiguity in logic handling.
+      </h2>
+    </div>
+  </div>
+
+  <footer>
+    &copy; 2025 Kumar. All rights reserved.
+  </footer>
 </body>
 
 </html>
