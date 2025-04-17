@@ -2,23 +2,110 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>sasikiran's page</title>
-    <link rel="stylesheet" href="style.css" />
-    <script src="app.js"></script>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>welcome to my page!</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f2f2f2;
+      margin: 0;
+      padding: 0;
+    }
+
+    header {
+      background-color: #2c3e50;
+      color: white;
+      text-align: center;
+      padding: 2rem;
+    }
+
+    h1 {
+      margin-bottom: 0.5rem;
+    }
+
+    .content {
+      max-width: 800px;
+      margin: 2rem auto;
+      padding: 1rem;
+      background-color: #ffffff;
+      border-radius: 8px;
+    }
+
+    .section {
+      margin-bottom: 2rem;
+    }
+
+    .fleet h2 {
+      color: #1f618d;
+      /* Blue */
+    }
+
+    .student h2 {
+      color: #c0392b;
+      /* Red */
+    }
+
+    .hospital h2 {
+      color: #148f77;
+      /* Teal/Green */
+    }
+
+    strong {
+      color: #333333;
+    }
+
+    .MainPage-button {
+      margin: 30px 0;
+      background-color: #2cbaee; /* Purple */
+      color: white;
+      padding: 12px 24px;
+      border: none;
+      border-radius: 8px;
+      font-size: 16px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+      text-decoration: none;
+    }
+    
+  </style>
 </head>
 
 <body>
-    <ul>
-        <li>
-            <h2>Building the repo</h2>
-        </li>
-        <h2>Professor Reed's Comment<br></h2>NEED REFLECTIONS
-    </ul>
-</body>
 
-<!-- Return to Main Page -->
-<a href="../index.html" class="MainPage-button">⬅ Return to Main Page</a>
+  <header>
+    <h1>Welcome to my page!</h1>
+  </header>
+
+  <div class="content">
+    <h1>professor feedback: What is this?</h1>
+    <p> You need reflections on the 3 things we discussed in class. Please see my example repo if you are still
+      confused.</p>
+    <div class="section fleet">
+      <h2>1. Clean, Readable Structure with Thematic Styling</h2>
+      <p><strong>Use Case:</strong> This structure is useful when building webpages that are easy to navigate and visually organized. Thematic styling (like color-coded sections) helps users identify content at a glance.
+      </p>
+      <p><strong>Benefit:</strong> It improves both the user experience and code maintainability. Developers can quickly recognize the purpose of each section, and users can find information faster.</p>
+      <h2>Professor Reed's Comment<br></h2>What did you learn?
+    </div>
+
+    <div class="section student">
+      <h2>2. Consistent and Modern Styling Choices</h2>
+      <p><strong>Use Case:</strong> Consistency in design is important in any modern website. Using the same fonts, button styles, and spacing throughout the page helps maintain a professional and unified look.</p>
+      <p><strong>Benefit:</strong> It enhances the visual appeal of the website and ensures users aren’t confused by abrupt design changes. Modern styles also make the site feel up-to-date and user-friendly.</p>
+    </div>
+
+    <div class="section hospital">
+      <h2>3. Potential Improvements & Scalability</h2>
+      <p><strong>Use Case:</strong> Thinking about scalability is important for future-proofing a project. If the site or app needs to grow, the code should already be modular and easy to expand.</p>
+      <p><strong>Benefit:</strong> It saves time and effort in the long term. Planning ahead allows for new features or sections to be added without having to rewrite large parts of the code.</p>
+    </div>
+
+  </div>
+
+    <!-- Return to Main Page -->
+    <a href="../index.html" class="MainPage-button">⬅ Return to Main Page</a>
+
+</body>
 
 </html>
