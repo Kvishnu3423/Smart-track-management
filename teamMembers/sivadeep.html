@@ -2,150 +2,152 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <title>Sivadeep's Page</title>
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sivadeep's Page</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
 
-        body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background-color: #f5f7fa;
-            color: #333;
-        }
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(120deg, #e0f7fa, #f3e5f5);
+      color: #2c3e50;
+      transition: background 0.3s ease;
+    }
 
-        header {
-            background-color: #1f2937;
-            color: white;
-            padding: 30px 20px;
-            text-align: center;
-            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
-        }
+    header {
+      background: linear-gradient(to right, #6a11cb, #2575fc);
+      color: white;
+      padding: 40px 20px;
+      text-align: center;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    }
 
-        h1 {
-            font-size: 2.2rem;
-            font-weight: bold;
-            margin-bottom: 25px;
-        }
+    h1 {
+      font-size: 2.5rem;
+      font-weight: 700;
+      margin-bottom: 10px;
+      letter-spacing: 1px;
+    }
 
-        h2 {
-            font-size: 1.6rem;
-            margin-bottom: 10px;
-            color: #3b82f6;
-        }
+    .container {
+      max-width: 960px;
+      margin: 50px auto;
+      padding: 0 20px;
+    }
 
-        h3 {
-            font-size: 1.2rem;
-            color: #374151;
-            margin-bottom: 10px;
-        }
+    .section-title {
+      font-size: 1.9rem;
+      color: #4a148c;
+      margin-bottom: 30px;
+      border-left: 6px solid #7b1fa2;
+      padding-left: 15px;
+      font-weight: 600;
+    }
 
-        .container {
-            max-width: 1000px;
-            margin: 40px auto;
-            padding: 0 20px;
-        }
+    .card {
+      background: #ffffff;
+      padding: 30px;
+      margin-bottom: 25px;
+      border-radius: 16px;
+      box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
 
-        .section-title {
-            font-size: 1.8rem;
-            color: #1f2937;
-            margin-bottom: 20px;
-            border-left: 4px solid #3b82f6;
-            padding-left: 10px;
-        }
+    .card:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 10px 24px rgba(0, 0, 0, 0.15);
+    }
 
-        .card {
-            background-color: white;
-            padding: 25px;
-            margin-bottom: 20px;
-            border-radius: 12px;
-            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
-            transition: transform 0.2s ease;
-        }
+    .card h2 {
+      font-size: 1.6rem;
+      margin-bottom: 12px;
+      color: #6a1b9a;
+    }
 
-        .card:hover {
-            transform: translateY(-4px);
-        }
+    .card p {
+      font-size: 1.05rem;
+      color: #444;
+      line-height: 1.7;
+    }
 
-        .card p {
-            font-size: 1rem;
-            color: #555;
-            line-height: 1.6;
-        }
+    .back-button {
+      display: inline-block;
+      margin: 40px auto 0;
+      padding: 14px 36px;
+      background: linear-gradient(to right, #7b1fa2, #512da8);
+      color: white;
+      font-weight: bold;
+      font-size: 1rem;
+      text-decoration: none;
+      border-radius: 30px;
+      box-shadow: 0 4px 14px rgba(0, 0, 0, 0.2);
+      transition: background 0.3s ease, transform 0.3s ease;
+    }
 
-        .back-button {
-            display: inline-block;
-            margin: 30px auto;
-            padding: 12px 30px;
-            background-color: #3b82f6;
-            color: white;
-            font-weight: 600;
-            text-decoration: none;
-            border-radius: 8px;
-            transition: background-color 0.3s ease;
-        }
+    .back-button:hover {
+      background: linear-gradient(to right, #512da8, #303f9f);
+      transform: scale(1.05);
+    }
 
-        .back-button:hover {
-            background-color: #2563eb;
-        }
-
-        footer {
-            text-align: center;
-            padding: 20px;
-            font-size: 0.9rem;
-            color: #888;
-        }
-    </style>
+    footer {
+      text-align: center;
+      padding: 20px;
+      font-size: 0.9rem;
+      color: #777;
+      margin-top: 50px;
+    }
+  </style>
 </head>
 
 <body>
 
-    <header>
-        <h1>Sivadeep's Dashboard Reflections</h1>
-    </header>
+  <header>
+    <h1>Sivadeep's Dashboard Reflections</h1>
+  </header>
 
-    <div class="container">
-        <div class="section-title">🧠 UML Diagram Reflections</div>
+  <div class="container">
+    <div class="section-title">🧠 UML Diagram Reflections</div>
 
-        <div class="card">
-            <h2>Reflection 1: Role Clarity through Use Case Design</h2>
-            <p>
-                Creating the use case diagram helped us clearly identify the primary users of the system: Students, Parents, and Transportation Coordinators. 
-                By mapping out specific actions such as <strong>"Track Bus"</strong>, <strong>"Receive Notifications"</strong>, and <strong>"Update Bus Status"</strong>, 
-                we could effectively define system boundaries and responsibilities. This not only brought clarity to development requirements 
-                but also aligned stakeholder expectations from the start.
-            </p>
-        </div>
-
-        <div class="card">
-            <h2>📍 Reflection 2: Visual Workflow from Activity Diagram</h2>
-            <p>
-                Designing the activity diagram allowed us to visually structure the step-by-step tracking process, starting from 
-                <strong>"Tracking Start"</strong> to <strong>"Notify Parent"</strong> and finally ending with <strong>"Tracking End"</strong>. 
-                This sequence helped us think through real-world scenarios and user interactions, reducing ambiguity and uncovering hidden steps 
-                such as conditional checks or system updates that weren’t initially considered.
-            </p>
-        </div>
-
-        <div class="card">
-            <h2>⚙️ Reflection 3: System Integration and Improvement Areas</h2>
-            <p>
-                Through both diagrams, we reflected on system integration—how updates to the bus location should trigger notifications and logs simultaneously. 
-                It became clear that automation and real-time updates are key to system efficiency. This also highlighted potential areas for enhancement, 
-                such as integrating GPS APIs, improving parent alert timing, and adding error handling if location updates fail.
-            </p>
-        </div>
-
-        <a href="../index.html" class="back-button">⬅ Return to Main Page</a>
+    <div class="card">
+      <h2>Reflection 1: Role Clarity through Use Case Design</h2>
+      <p>
+        Creating the use case diagram helped us clearly identify the primary users of the system: Students, Parents, and Transportation Coordinators.
+        By mapping out specific actions such as <strong>"Track Bus"</strong>, <strong>"Receive Notifications"</strong>, and <strong>"Update Bus Status"</strong>,
+        we could effectively define system boundaries and responsibilities. This not only brought clarity to development requirements
+        but also aligned stakeholder expectations from the start.
+      </p>
     </div>
 
-    <footer>
-        &copy; 2025 Sivadeep's Project. All rights reserved.
-    </footer>
+    <div class="card">
+      <h2>📍 Reflection 2: Visual Workflow from Activity Diagram</h2>
+      <p>
+        Designing the activity diagram allowed us to visually structure the step-by-step tracking process, starting from
+        <strong>"Tracking Start"</strong> to <strong>"Notify Parent"</strong> and finally ending with <strong>"Tracking End"</strong>.
+        This sequence helped us think through real-world scenarios and user interactions, reducing ambiguity and uncovering hidden steps
+        such as conditional checks or system updates that weren’t initially considered.
+      </p>
+    </div>
+
+    <div class="card">
+      <h2>⚙️ Reflection 3: System Integration and Improvement Areas</h2>
+      <p>
+        Through both diagrams, we reflected on system integration—how updates to the bus location should trigger notifications and logs simultaneously.
+        It became clear that automation and real-time updates are key to system efficiency. This also highlighted potential areas for enhancement,
+        such as integrating GPS APIs, improving parent alert timing, and adding error handling if location updates fail.
+      </p>
+    </div>
+
+    <a href="../index.html" class="back-button">⬅ Return to Main Page</a>
+  </div>
+
+  <footer>
+    &copy; 2025 Sivadeep's Project. All rights reserved.
+  </footer>
 
 </body>
 
