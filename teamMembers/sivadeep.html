@@ -1,84 +1,152 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8">
-  <title>Smart Track Bus System - UML Reflections</title>
-  <style>
-    body {
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      background: linear-gradient(to right, #eef2f3, #8e9eab);
-      margin: 0;
-      padding: 0;
-      color: #333;
-    }
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Sivadeep's Page</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
 
-    .container {
-      max-width: 900px;
-      margin: 40px auto;
-      padding: 20px;
-      background: white;
-      border-radius: 12px;
-      box-shadow: 0 6px 20px rgba(0,0,0,0.15);
-    }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f5f7fa;
+            color: #333;
+        }
 
-    h1 {
-      text-align: center;
-      font-size: 2.5rem;
-      color: #4A148C;
-      margin-bottom: 30px;
-    }
+        header {
+            background-color: #1f2937;
+            color: white;
+            padding: 30px 20px;
+            text-align: center;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+        }
 
-    .reflection {
-      margin-bottom: 30px;
-      padding: 20px;
-      border-left: 6px solid #6A1B9A;
-      background: #F3E5F5;
-      border-radius: 10px;
-    }
+        h1 {
+            font-size: 2.2rem;
+            font-weight: bold;
+            margin-bottom: 25px;
+        }
 
-    .reflection h2 {
-      margin-top: 0;
-      font-size: 1.4rem;
-      color: #4A148C;
-    }
+        h2 {
+            font-size: 1.6rem;
+            margin-bottom: 10px;
+            color: #3b82f6;
+        }
 
-    .reflection p {
-      font-size: 1rem;
-      line-height: 1.6;
-    }
+        h3 {
+            font-size: 1.2rem;
+            color: #374151;
+            margin-bottom: 10px;
+        }
 
-    footer {
-      text-align: center;
-      margin-top: 40px;
-      color: #555;
-      font-size: 0.9rem;
-    }
-  </style>
+        .container {
+            max-width: 1000px;
+            margin: 40px auto;
+            padding: 0 20px;
+        }
+
+        .section-title {
+            font-size: 1.8rem;
+            color: #1f2937;
+            margin-bottom: 20px;
+            border-left: 4px solid #3b82f6;
+            padding-left: 10px;
+        }
+
+        .card {
+            background-color: white;
+            padding: 25px;
+            margin-bottom: 20px;
+            border-radius: 12px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+            transition: transform 0.2s ease;
+        }
+
+        .card:hover {
+            transform: translateY(-4px);
+        }
+
+        .card p {
+            font-size: 1rem;
+            color: #555;
+            line-height: 1.6;
+        }
+
+        .back-button {
+            display: inline-block;
+            margin: 30px auto;
+            padding: 12px 30px;
+            background-color: #3b82f6;
+            color: white;
+            font-weight: 600;
+            text-decoration: none;
+            border-radius: 8px;
+            transition: background-color 0.3s ease;
+        }
+
+        .back-button:hover {
+            background-color: #2563eb;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            font-size: 0.9rem;
+            color: #888;
+        }
+    </style>
 </head>
+
 <body>
 
-  <div class="container">
-    <h1>🚌 Smart Track UML Diagram Reflections</h1>
+    <header>
+        <h1>Sivadeep's Dashboard Reflections</h1>
+    </header>
 
-    <div class="reflection">
-      <h2>🧠 Reflection 1: Role Clarity through Use Case Design</h2>
-      <p>Creating the use case diagram helped us clearly identify the primary users of the system: <strong>Students</strong>, <strong>Parents</strong>, and <strong>Transportation Coordinators</strong>. By mapping out specific actions, we effectively defined system boundaries and aligned expectations.</p>
-    </div>
+    <div class="container">
+        <div class="section-title">🧠 UML Diagram Reflections</div>
 
-    <div class="reflection">
-      <h2>📍 Reflection 2: Visual Workflow from Activity Diagram</h2>
-      <p>The activity diagram allowed us to structure the step-by-step flow, reducing ambiguity and highlighting real-world process needs such as location updates and conditional logic between activities.</p>
-    </div>
+        <div class="card">
+            <h2>Reflection 1: Role Clarity through Use Case Design</h2>
+            <p>
+                Creating the use case diagram helped us clearly identify the primary users of the system: Students, Parents, and Transportation Coordinators. 
+                By mapping out specific actions such as <strong>"Track Bus"</strong>, <strong>"Receive Notifications"</strong>, and <strong>"Update Bus Status"</strong>, 
+                we could effectively define system boundaries and responsibilities. This not only brought clarity to development requirements 
+                but also aligned stakeholder expectations from the start.
+            </p>
+        </div>
 
-    <div class="reflection">
-      <h2>⚙️ Reflection 3: System Integration and Improvement Areas</h2>
-      <p>We identified how automation and real-time updates are crucial for efficiency. We also saw opportunities to enhance our design using GPS APIs and improving alert mechanisms for parents and coordinators.</p>
+        <div class="card">
+            <h2>📍 Reflection 2: Visual Workflow from Activity Diagram</h2>
+            <p>
+                Designing the activity diagram allowed us to visually structure the step-by-step tracking process, starting from 
+                <strong>"Tracking Start"</strong> to <strong>"Notify Parent"</strong> and finally ending with <strong>"Tracking End"</strong>. 
+                This sequence helped us think through real-world scenarios and user interactions, reducing ambiguity and uncovering hidden steps 
+                such as conditional checks or system updates that weren’t initially considered.
+            </p>
+        </div>
+
+        <div class="card">
+            <h2>⚙️ Reflection 3: System Integration and Improvement Areas</h2>
+            <p>
+                Through both diagrams, we reflected on system integration—how updates to the bus location should trigger notifications and logs simultaneously. 
+                It became clear that automation and real-time updates are key to system efficiency. This also highlighted potential areas for enhancement, 
+                such as integrating GPS APIs, improving parent alert timing, and adding error handling if location updates fail.
+            </p>
+        </div>
+
+        <a href="../index.html" class="back-button">⬅ Return to Main Page</a>
     </div>
 
     <footer>
-      &copy; 2025 Smart Track Team | UML Reflections
+        &copy; 2025 Sivadeep's Project. All rights reserved.
     </footer>
-  </div>
 
 </body>
+
 </html>
